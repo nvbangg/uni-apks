@@ -56,6 +56,7 @@ def get_matrix(source: str) -> None:
             if repo:
                 our_releases_by_brand = _fetch_our_releases(repo, net)
                 our_date = our_releases_by_brand.get(source_lower, "")
+                our_date = "2026-01-01T00:00:00Z"  # ! test
                 if our_date:
                     try:
                         changelog_text, _ = _fetch_latest_release(patches_source, net)
@@ -109,6 +110,7 @@ def check_builds_needed(force_all: bool = False) -> None:
         brands_to_build: list[str] = []
         for brand, patches_source in seen.items():
             our_date = our_releases_by_brand.get(brand, "")
+            our_date = "2026-01-01T00:00:00Z"  # ! test
             upstream_date = ""
             changelog_text = ""
             try:
