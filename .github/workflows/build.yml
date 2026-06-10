@@ -178,7 +178,7 @@ jobs:
           gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --draft=false --title "$TAG" --notes-file final.md
 
       - name: Send Telegram notification
-        if: steps.check.outputs.has_apks == 'true'
+        if: steps.check.outputs.has_apks == 'true' && env.TG_TOKEN != '' && env.TG_CHAT != ''
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT }}
