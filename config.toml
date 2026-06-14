@@ -1,43 +1,49 @@
-parallel-jobs = 1
+# parallel-jobs = 1
+strict-sigcheck = false
 
-[YouTube]
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-patcher-args = "-e 'Change header' -Ocustom=icons/YouTube/header -e 'Custom branding' -OcustomIcon=icons/YouTube/branding -OcustomName=Morphe"
+[Busuu]
+patches-source = "github:hoo-dles/morphe-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/busuu/busuu-learn-languages/"
+uptodown-dlurl = "https://busuu.en.uptodown.com/android"
 
-[Music]
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-patcher-args = "-e 'Change header' -Ocustom=icons/Music/header -e 'Custom branding' -OcustomIcon=icons/Music/branding -OcustomName='Morphe Music'"
-arch = "both"
+# [YouTube]
+# uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+# patcher-args = "-e 'Change header' -Ocustom=icons/YouTube/header -e 'Custom branding' -OcustomIcon=icons/YouTube/branding -OcustomName=Morphe"
 
-[Reddit]
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
-patcher-args = "-e 'Custom branding name for Reddit' -OappName='Morphe Reddit'"
+# [Music]
+# uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+# patcher-args = "-e 'Change header' -Ocustom=icons/Music/header -e 'Custom branding' -OcustomIcon=icons/Music/branding -OcustomName='Morphe Music'"
+# arch = "both"
 
-[X]
-# uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
-github-dlurl = "https://github.com/krvstek/uni-storage/releases/tag/x-twitter"
-patches-source = "github:crimera/piko"
-brand = "Piko"
-included-patches = "'Browse tweet object' 'Dynamic color'"
-skip-sigcheck = true
+# [Reddit]
+# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
+# patcher-args = "-e 'Custom branding name for Reddit' -OappName='Morphe Reddit'"
 
-[Twitter]
-# uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
-github-dlurl = "https://github.com/krvstek/uni-storage/releases/tag/x-twitter"
-patches-source = "github:crimera/piko"
-brand = "Piko"
-included-patches = "'Bring back twitter' 'Browse tweet object' 'Dynamic color'"
-skip-sigcheck = true
+# [X]
+# # uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+# # apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+# github-dlurl = "https://github.com/krvstek/uni-storage/releases/tag/x-twitter"
+# patches-source = "github:crimera/piko"
+# brand = "Piko"
+# included-patches = "'Browse tweet object' 'Dynamic color'"
+# skip-sigcheck = true
 
-[Instagram]
-# uptodown-dlurl = "https://instagram.en.uptodown.com/android"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
-github-dlurl = "https://github.com/krvstek/uni-storage/releases/tag/instagram"
-patches-source = "github:crimera/piko"
-brand = "Piko"
-arch = "arm64-v8a"
+# [Twitter]
+# # uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+# # apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+# github-dlurl = "https://github.com/krvstek/uni-storage/releases/tag/x-twitter"
+# patches-source = "github:crimera/piko"
+# brand = "Piko"
+# included-patches = "'Bring back twitter' 'Browse tweet object' 'Dynamic color'"
+# skip-sigcheck = true
+
+# [Instagram]
+# # uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+# # apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+# github-dlurl = "https://github.com/krvstek/uni-storage/releases/tag/instagram"
+# patches-source = "github:crimera/piko"
+# brand = "Piko"
+# arch = "arm64-v8a"
