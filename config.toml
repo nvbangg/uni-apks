@@ -4,6 +4,7 @@ parallel-jobs = 1
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 patcher-args = "-e 'Change header' -Ocustom=icons/YouTube/header -e 'Custom branding' -OcustomIcon=icons/YouTube/branding -OcustomName=Morphe"
+changelog-keywords = ["non-exist"]
 
 [Music]
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
